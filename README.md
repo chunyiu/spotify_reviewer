@@ -139,3 +139,6 @@ Within the dropdowns:
 - **More Analysis Tools**: Add comparison between versions, feature-focused analysis
 - **Multi-platform**: Extend to analyze reviews from App Store and other platforms
 - **Custom Training**: Fine-tune the language model on Spotify-specific terminology
+
+## Video Demo
+https://github.com/user-attachments/assets/272551f9-f1be-4c5a-b087-670cdcbbe8b5
