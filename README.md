@@ -35,7 +35,7 @@ This chatbot allows users to ask questions about Spotify Google reviews and get 
 
 ## Installation & Usage
 
-1. Clone the repository
+1. Download chatbot.py and REQUIREMENTS.txt
 2. Download all files from this [Kaggle repository](https://www.kaggle.com/datasets/ngchunyiu/spotify-google-reviews-dataset/settings)
 3. Create a `.env` file with your [HuggingFace API token](https://huggingface.co/settings/tokens):
    ```
