@@ -1,0 +1,9 @@
+Python>=3.8
+streamlit
+faiss-cpu
+sentence-transformers
+huggingface_hub
+pandas
+numpy
+tiktoken
+python-dotenv
