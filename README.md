@@ -1,10 +1,12 @@
-# Spotify Reviews Chatbot
+<img width="226" alt="image" src="https://github.com/user-attachments/assets/caf308dd-b83a-4d5a-a882-55d89729001d" />
 
-A specialized Q&A chatbot for analyzing Spotify app reviews from the Google Play Store, built with Streamlit, FAISS, and Hugging Face models.
+# Spotify Reviews Q&A Chatbot
+
+A specialized Q&A chatbot for analyzing Spotify app reviews from the Google Play Store, built with Streamlit, FAISS, and HuggingFace models.
 
 ## Overview
 
-This chatbot allows users to ask questions about Spotify app reviews and get AI-powered insights. It can analyze sentiment, identify trends, summarize feedback, and answer specific questions based on the review dataset.
+This chatbot allows users to ask questions about Spotify Google reviews and get AI-powered insights. It can analyze sentiment, identify trends, summarize feedback, and answer specific questions based on the review dataset.
 
 ## Features
 
@@ -31,21 +33,34 @@ This chatbot allows users to ask questions about Spotify app reviews and get AI-
 - Tiktoken
 - python-dotenv
 
-## Installation
+## Installation & Usage
 
 1. Clone the repository
-2. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+2. Download all files from
 3. Create a `.env` file with your Hugging Face API token:
    ```
-   HF_TOKEN=your_token_here
+   HF_TOKEN=your_huggingface_token_here
+   ```
+4. Place the following files into your working directory:
+   ```
+   chatbot.py
+   SPOTIFY_REVIEWS.csv
+   embeddings.npy
+   faiss_index.index
+   .env
+   ```
+6. Install dependencies:
+   ```
+   pip install -r REQUIREMENTS.txt
+   ```
+7. Run the application:
+   ```
+   streamlit run chatbot.py
    ```
 
 ## Dataset
 
-Place your Spotify reviews dataset in the `dataset` folder as `SPOTIFY_REVIEWS.csv`. The dataset should have the following columns:
+SPOTIFY_REVIEWS.csv contains 3.4+ million Spotify Google Reviews and contains the following columns:
 - review_id
 - review_text
 - review_rating
@@ -53,20 +68,27 @@ Place your Spotify reviews dataset in the `dataset` folder as `SPOTIFY_REVIEWS.c
 - author_app_version
 - review_timestamp
 
-## Usage
+## Example Query
+<img width="1505" alt="image" src="https://github.com/user-attachments/assets/ea3e6354-72b5-4989-96b1-689422ef5edb" />
+<img width="1498" alt="image" src="https://github.com/user-attachments/assets/5f695cf9-13a0-4278-8b12-3714738e43c7" />
+<img width="1499" alt="image" src="https://github.com/user-attachments/assets/f319c7c0-b5e9-4e52-8d8b-3775ae58a2a4" />
+<img width="1497" alt="image" src="https://github.com/user-attachments/assets/9d0ec03d-fc93-427b-a76f-77295bb8776b" />
+Within the dropdowns:
+<img width="1494" alt="image" src="https://github.com/user-attachments/assets/2281582c-93f9-489b-a48d-4eb425ab1beb" />
+<img width="1498" alt="image" src="https://github.com/user-attachments/assets/17ff34e4-5180-440e-ae32-1dbda57646e2" />
+<img width="1498" alt="image" src="https://github.com/user-attachments/assets/66aa402d-e9ec-437c-8994-edee0ac55428" />
+<img width="1499" alt="image" src="https://github.com/user-attachments/assets/ca6ba57b-8eac-42ff-878b-779d89cfd694" />
+<img width="1497" alt="image" src="https://github.com/user-attachments/assets/6ec4ffdf-92a9-48e3-97af-e63f4e841d82" />
+<img width="1497" alt="image" src="https://github.com/user-attachments/assets/e6d931e0-3a26-4f43-b9f9-9c9b61b911c1" />
+<img width="1498" alt="image" src="https://github.com/user-attachments/assets/e8fe8873-1804-4a04-aaeb-9ab7f8c85efd" />
+<img width="1500" alt="image" src="https://github.com/user-attachments/assets/0abc438e-08d1-4c90-a868-6e84b2faceec" />
+<img width="1497" alt="image" src="https://github.com/user-attachments/assets/82569e99-bf62-4c20-8b21-9e9ebcd41f2a" />
+<img width="1501" alt="image" src="https://github.com/user-attachments/assets/43c1bbcb-0f13-4c65-9d98-73d3881b0d36" />
+<img width="1499" alt="image" src="https://github.com/user-attachments/assets/cbb20197-d2e1-434c-a665-512ad778a2fa" />
+<img width="1499" alt="image" src="https://github.com/user-attachments/assets/844d2752-cd7d-44e5-9391-7ca2291f6fd6" />
+<img width="1498" alt="image" src="https://github.com/user-attachments/assets/0b640db2-b528-4426-a98d-f9f2c3bd8e18" />
+<img width="1502" alt="image" src="https://github.com/user-attachments/assets/a2c405d1-fa13-4b9d-ab44-c0c5effe7f9a" />
 
-Run the application:
-```
-streamlit run chatbot.py
-```
-
-### Example Queries
-
-- "What are users saying about the latest version?"
-- "Summarize the main complaints in reviews from the past month"
-- "What's the average rating for version 8.7.18.459?"
-- "How has user sentiment changed over time?"
-- "What features do users request most often?"
 
 ## Technical Details
 
@@ -109,18 +131,10 @@ streamlit run chatbot.py
 - Adjust `CHUNK_SIZE` and `MAX_TOKENS` for different review dataset sizes
 - Change the embedding model by replacing `paraphrase-MiniLM-L6-v2` with another SentenceTransformer model
 
-## Improvements and Extensions
+## Potential Improvements and Extensions
 
 - **Data Visualization**: Add charts and graphs for trend analysis
 - **Feedback Loop**: Implement user feedback on response quality
 - **More Analysis Tools**: Add comparison between versions, feature-focused analysis
 - **Multi-platform**: Extend to analyze reviews from App Store and other platforms
 - **Custom Training**: Fine-tune the language model on Spotify-specific terminology
-
-## License
-
-[Your license information]
-
-## Contact
-
-[Your contact information]
