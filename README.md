@@ -47,6 +47,7 @@ This chatbot allows users to ask questions about Spotify Google reviews and get 
    SPOTIFY_REVIEWS.csv
    embeddings.npy
    faiss_index.index
+   REQUIREMENTS.txt
    .env
    ```
 6. Install dependencies:
