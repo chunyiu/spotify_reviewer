@@ -36,8 +36,8 @@ This chatbot allows users to ask questions about Spotify Google reviews and get 
 ## Installation & Usage
 
 1. Clone the repository
-2. Download all files from
-3. Create a `.env` file with your Hugging Face API token:
+2. Download all files from this [Kaggle repository](https://www.kaggle.com/datasets/ngchunyiu/spotify-google-reviews-dataset/settings)
+3. Create a `.env` file with your [HuggingFace API token](https://huggingface.co/settings/tokens):
    ```
    HF_TOKEN=your_huggingface_token_here
    ```
@@ -60,7 +60,7 @@ This chatbot allows users to ask questions about Spotify Google reviews and get 
 
 ## Dataset
 
-SPOTIFY_REVIEWS.csv contains 3.4+ million Spotify Google Reviews and contains the following columns:
+The CSV file contains 3.4+ million Spotify Google Reviews with the following columns:
 - review_id
 - review_text
 - review_rating
