@@ -60,7 +60,10 @@ This chatbot allows users to ask questions about Spotify Google reviews and get 
    ```
 
 ## Example Query
+
+Reasoning:
 <img width="1505" alt="image" src="https://github.com/user-attachments/assets/ea3e6354-72b5-4989-96b1-689422ef5edb" />
+Response:
 <img width="1498" alt="image" src="https://github.com/user-attachments/assets/5f695cf9-13a0-4278-8b12-3714738e43c7" />
 <img width="1499" alt="image" src="https://github.com/user-attachments/assets/f319c7c0-b5e9-4e52-8d8b-3775ae58a2a4" />
 <img width="1497" alt="image" src="https://github.com/user-attachments/assets/9d0ec03d-fc93-427b-a76f-77295bb8776b" />
