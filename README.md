@@ -61,13 +61,15 @@ This chatbot allows users to ask questions about Spotify Google reviews and get 
 
 ## Example Query
 
-Reasoning:
+### Reasoning
 <img width="1505" alt="image" src="https://github.com/user-attachments/assets/ea3e6354-72b5-4989-96b1-689422ef5edb" />
-Response:
+
+### Response
 <img width="1498" alt="image" src="https://github.com/user-attachments/assets/5f695cf9-13a0-4278-8b12-3714738e43c7" />
 <img width="1499" alt="image" src="https://github.com/user-attachments/assets/f319c7c0-b5e9-4e52-8d8b-3775ae58a2a4" />
 <img width="1497" alt="image" src="https://github.com/user-attachments/assets/9d0ec03d-fc93-427b-a76f-77295bb8776b" />
-Within the dropdowns:
+
+### Detailed dropdowns
 <img width="1494" alt="image" src="https://github.com/user-attachments/assets/2281582c-93f9-489b-a48d-4eb425ab1beb" />
 <img width="1498" alt="image" src="https://github.com/user-attachments/assets/17ff34e4-5180-440e-ae32-1dbda57646e2" />
 <img width="1498" alt="image" src="https://github.com/user-attachments/assets/66aa402d-e9ec-437c-8994-edee0ac55428" />
