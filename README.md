@@ -59,16 +59,6 @@ This chatbot allows users to ask questions about Spotify Google reviews and get 
    streamlit run chatbot.py
    ```
 
-## Dataset
-
-The CSV file contains 3.4+ million Spotify Google Reviews with the following columns:
-- review_id
-- review_text
-- review_rating
-- review_likes
-- author_app_version
-- review_timestamp
-
 ## Example Query
 <img width="1505" alt="image" src="https://github.com/user-attachments/assets/ea3e6354-72b5-4989-96b1-689422ef5edb" />
 <img width="1498" alt="image" src="https://github.com/user-attachments/assets/5f695cf9-13a0-4278-8b12-3714738e43c7" />
@@ -92,6 +82,16 @@ Within the dropdowns:
 
 
 ## Technical Details
+
+### Dataset
+
+The CSV file contains 3.4+ million Spotify Google Reviews with the following columns:
+- review_id
+- review_text
+- review_rating
+- review_likes
+- author_app_version
+- review_timestamp
 
 ### Components
 
